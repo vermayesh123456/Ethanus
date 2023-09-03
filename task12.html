@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin: 50px;
+            padding: 0;
+            background-color: rgb(249, 148, 148);
+        }
+
+        .box {
+            background-color: rgb(239, 239, 247);
+            width: 500px;
+            height: 710px;
+            padding: 20px;
+            border-radius: 70px 7px;
+        }
+        .top{
+            display: flex;
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            margin-left: 15%;
+            margin-right: 10%;
+
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+        }
+        input,select,textarea{
+            margin-top: 9%;
+            width: 80%;
+            padding: 5px 0;
+            margin-bottom: 2%;
+            font-family: 'Cutive Mono', monospace;
+            padding-left: 2px;
+        }
+        label{
+            margin-top: 25%;
+            margin-bottom: 9px;
+        }
+
+        button {
+            transition: 0.5s;
+            background-color: rgb(249, 148, 148);
+            color: rgb(239, 239, 247);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 40%; 
+            font-family: 'Cutive Mono', monospace;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            margin-top: 10%;
+            margin-left: 30%;
+            border-radius: 9px 2px;
+        }
+        button:hover{
+            background-color:rgb(255, 130, 130);
+            transition: 0.5s;
+            color: rgb(255, 234, 0);
+            border:5px ;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 19px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 40%; 
+            margin-top: 10%;
+            margin-left: 30%;
+            border-radius: 9px 2px;
+            box-shadow: 3px 1px 3pc  rgb(251, 233, 33);
+            
+            
+        }
+        .radio{
+            display: flex;
+            align-items: end;
+        }
+        h1{
+           text-align: center;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           background-color:rgb(249, 148, 148) ;
+           margin-left: 16%;
+           margin-right: 16%;
+           border-radius: 9px 2px;
+           color: rgb(250, 250, 250);
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <div><H1>Registation Form</H1></div>
+    <div class="top">
+        <div class="left">
+            <label for="name">Name:</label>
+            <label for="email">Email:</label>
+            <label for="password">Password:</label>
+            <label for="phone">Phone Number:</label>
+            <label for="gender">Gender:</label>
+            <label for="language">Language:</label>
+            <label for="zipcode">Zip Code:</label>
+            <label  for="about">About:</label>
+        </div>
+        <div class="right">
+             <form action="">
+            <input type="text" id="name" placeholder="Enter your Name">
+            <input type="email" id="email" placeholder="Enter your Email">
+            <input type="password" id="password" placeholder="Enter your Password">
+            <input type="tel" id="phone" placeholder="Enter your Phone Number">
+            <div class="radio">
+                <input type="radio" id="gender">Male
+                <input type="radio" id="gender">Female
+                <input type="radio" id="gender">Others
+            </div>
+           
+            <select name="" id="">
+                <option value="">Choose Your Language</option>
+                <option value="">Sanskrit</option>
+                <option value="">Hindi</option>
+                <option value="">English</option>
+                <option value="">Urdu</option>
+            </select>
+            <input type="number" id="zipcode" placeholder="Enter your Pin Code">
+            <textarea name="" id="" cols="5" rows="5"></textarea>
+            </form>
+        </div>
+    </div>
+       
+    <div class="bottom">
+        <button type="submit">Register</button>
+    </div>
+        
+   </div>
+  
+   
+</body>
+</html>
+
